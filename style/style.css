@@ -1,0 +1,346 @@
+:root {
+  --primary: #008d91;
+  --bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: black;
+}
+
+/* Navbar Start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 7%;
+  background-color: #e5f2faa9;
+  border-bottom: 1px solid #0000004b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar-nav {
+  margin-right: auto;
+  margin-left: 32px;
+}
+
+.navbar .navbar-nav a {
+  color: #000000;
+  display: inline-block;
+  font-size: 16px;
+  align-items: center;
+  margin: 0 16px;
+}
+
+.img-logo {
+  margin-right: 32px;
+  padding-top: 6px;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #0000004b;
+  transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+  transition: 0.2s linear;
+}
+#masuk {
+  border: 1px solid var(--primary);
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 6px 12px;
+  color: var(--primary);
+  margin-right: 6px;
+}
+
+#daftar {
+  border: 1px solid var(--primary);
+  font-size: 16px;
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 6px 12px;
+  color: #ffffff;
+}
+
+#masuk:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+#daftar:hover {
+  background-color: #e5f2fa;
+  color: var(--primary);
+}
+/* Navbar End */
+
+/* Hero Section Start */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 7%;
+  background-color: #e5f2fa;
+  min-height: 690px;
+}
+
+.hero-text h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 16px;
+  color: #2e3646;
+}
+
+.hero-text p {
+  margin-bottom: 32px;
+}
+
+#btn-kelas {
+  border: 1px solid var(--primary);
+  font-size: 16px;
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 6px 12px;
+  color: #ffffff;
+}
+
+#btn-kelas:hover {
+  background-color: #005c5f;
+}
+/* /Hero Section */
+
+/* Tentang */
+.tentang {
+  background-color: #e5f2fa;
+  border-bottom-left-radius: 90%;
+  border-bottom-right-radius: 90%;
+  height: 250px;
+}
+
+.tentang h1 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 48px;
+  text-align: center;
+  color: #2e3646;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.tentang-card {
+  background-color: #ffffff;
+  max-width: 270px;
+  border: 1px solid #0000004b;
+  padding: 32px;
+  margin: 0 32px 0 32px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.tentang-card img {
+  margin-bottom: 16px;
+}
+
+.tentang-apa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 7%;
+  margin-top: 250px;
+}
+
+.tentang-apa-img {
+  margin-left: 32px;
+  margin-right: 100px;
+}
+
+.tentang-apa-text h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #2e3646;
+  margin-bottom: 16px;
+}
+
+.tentang-apa-text p {
+  text-align: justify;
+  margin-bottom: 32px;
+}
+
+#btn-pilihKelas {
+  border: 1px solid var(--primary);
+  font-size: 16px;
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 6px 12px;
+  color: #ffffff;
+}
+
+#btn-pilihKelas:hover {
+  background-color: #005c5f;
+}
+
+.tentang-layanan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 7%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.tentang-layanan-img {
+  margin-left: 100px;
+}
+
+.tentang-layanan-text h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #2e3646;
+  margin-bottom: 16px;
+}
+
+.tentang-layanan-text p {
+  text-align: justify;
+  margin-bottom: 32px;
+}
+#btn-pilihLayanan {
+  border: 1px solid var(--primary);
+  font-size: 16px;
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 6px 12px;
+  color: #ffffff;
+}
+
+#btn-pilihLayanan:hover {
+  background-color: #005c5f;
+}
+
+/* /Tentang */
+
+#hubungi-kami {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  max-width: 600px;
+  min-height: 600px;
+  padding: 32px;
+  margin: auto;
+  margin-bottom: 100px;
+  background-color: #e5f2fa;
+}
+
+.hubungi h1 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 48px;
+  text-align: center;
+  color: #2e3646;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+#submit-form {
+  width: 100%;
+  border: 1px solid var(--primary);
+  font-size: 16px;
+  background-color: var(--primary);
+  border-radius: 4px;
+  padding: 12px 12px;
+  color: #ffffff;
+  margin-top: 16px;
+}
+
+#submit-form:hover {
+  background-color: #005c5f;
+}
+
+.footer {
+  display: flex;
+  padding: 6px 7%;
+  justify-content: space-between;
+  background-color: #e5f2fa;
+  padding-top: 32px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #0000004b;
+}
+
+.column-1 p {
+  margin-bottom: 16px;
+}
+
+.sosmed a {
+  display: inline-block;
+  margin-right: 22px;
+}
+
+.column-2 h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2e3646;
+}
+
+.column-2 a {
+  display: block;
+  margin-top: 8px;
+}
+
+.column-3 h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2e3646;
+}
+
+.column-3 a {
+  display: block;
+  margin-top: 8px;
+}
+
+.footer-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 7%;
+  background-color: #e5f2fa;
+}
+
+.lainnya a {
+  margin: 0 16px;
+}
